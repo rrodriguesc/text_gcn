@@ -9,7 +9,7 @@ pattern_link = re.compile(r"https?:\/\/(www\.)"
 def handle_data(row: pd.Series) -> str:
     text: str = row['tweet_text']
     query: str = row['query_used']
-    text = text.replace(query, '')
+    text = text.replace(query, '').replace('\n', '')
     text = re.sub(pattern, '', text)
     text = re.sub(pattern_link, '', text)
     return text.strip()
