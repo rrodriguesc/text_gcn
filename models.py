@@ -2,7 +2,7 @@ from layers import *
 from metrics import *
 import tensorflow as tf
 
-flags = tf.app.flags
+flags = tf.app.flags 
 FLAGS = flags.FLAGS
 
 

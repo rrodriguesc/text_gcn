@@ -1,7 +1,7 @@
 from inits import *
 import tensorflow as tf
 
-flags = tf.app.flags
+flags = tf.app.flags 
 FLAGS = flags.FLAGS
 
 # global unique layer ID dictionary for layer name assignment

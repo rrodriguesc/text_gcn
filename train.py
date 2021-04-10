@@ -14,7 +14,7 @@ import sys
 if len(sys.argv) != 2:
 	sys.exit("Use: python train.py <dataset>")
 
-datasets = ['20ng', 'R8', 'R52', 'ohsumed', 'mr']
+datasets = ['20ng', 'R8', 'R52', 'ohsumed', 'mr', 'twt_pt']
 dataset = sys.argv[1]
 
 if dataset not in datasets:
@@ -29,7 +29,7 @@ tf.set_random_seed(seed)
 # Settings
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
-flags = tf.app.flags
+flags = tf.app.flags 
 FLAGS = flags.FLAGS
 # 'cora', 'citeseer', 'pubmed'
 flags.DEFINE_string('dataset', dataset, 'Dataset string.')
