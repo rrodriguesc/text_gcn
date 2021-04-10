@@ -1,0 +1,4 @@
+pandas
+nltk
+tensorflow==1.4.0
+sklearn
